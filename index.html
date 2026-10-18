@@ -38,6 +38,12 @@
     border: 1px solid var(--border); border-radius: 999px;
     padding: 4px 14px; font-size: 13px; color: var(--muted);
     background: var(--card);
+    display: inline-flex; align-items: center; gap: 7px;
+  }
+  .badge svg {
+    width: 14px; height: 14px; flex: none;
+    fill: none; stroke: var(--accent); stroke-width: 2;
+    stroke-linecap: round; stroke-linejoin: round;
   }
   section { margin-bottom: 44px; }
   h2 {
@@ -83,9 +89,9 @@
     <h1>kungen</h1>
     <p class="tagline">Tinkering here, building there — East &amp; West.</p>
     <div class="badges">
-      <span class="badge">🤖 AI Indie Development</span>
-      <span class="badge">🛠️ Open Source</span>
-      <span class="badge">☁️ Cloud Resident</span>
+      <span class="badge"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="5" width="14" height="14" rx="2"/><rect x="10" y="10" width="4" height="4"/><path d="M9 2v3M15 2v3M9 19v3M15 19v3M2 9h3M2 15h3M19 9h3M19 15h3"/></svg>AI Indie Development</span>
+      <span class="badge"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m8 6-6 6 6 6M16 6l6 6-6 6"/></svg>Open Source</span>
+      <span class="badge"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"/></svg>Cloud Resident</span>
     </div>
   </header>
 
